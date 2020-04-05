@@ -1,0 +1,175 @@
+<!DOCTYPE hmtl>
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/survey.css">
+</head>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="container">
+<header>
+<h1 id="title" class="text-center">Programming Language Survey Form</h1>
+<p id="description" class="description text-center">
+      Thank you for taking the time to help us to collect data on Programming Language User Choice!
+    </p>
+</header>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+   <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email">E -mail</label>
+   <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your E-mail"
+        required
+      />
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Age</label>
+   <input
+        type="number"
+        name="age"
+        id="number"
+        class="form-control"
+          min="1"
+          max="120"
+        placeholder="Enter your age"
+        required
+      />
+  </div>
+  <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  <div class="form-group">
+      <p>Would you recommend any Programming Language to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+         <div class="form-group">
+      <p>
+        What is your favorite Programming Language?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" >
+        <option disabled selected value>Select an option</option>
+        <option value="python">Python</option>
+        <option value="c++">C++</option>
+        <option value="java-script">Java Script</option>
+        <option value="ruby">Ruby</option>
+      </select>
+    </div>
+  <div class="form-group">
+      <p>If none of above,please comment your favourite?</p>
+      <textarea
+        id="favourite"
+        class="input-textarea"
+        name="favourite"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+  <div class="form-group">
+      <p>
+        Why above Programming Language is your favourite?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="easy-to-use"
+          type="checkbox"
+          class="input-checkbox"
+        />Easy to use</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="most-demand-in-your-area"
+          type="checkbox"
+          class="input-checkbox"
+        />Most demand in your area</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="fine-tuning"
+          type="checkbox"
+          class="input-checkbox"
+        />Fine Tuning</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Others"
+          type="checkbox"
+          class="input-checkbox"
+        />Others</label
+      >
+    </div>
+  <div class="form-group">
+      <p>If you have check on others, please explain?</p>
+      <textarea
+        id="others-reason"
+        class="input-textarea"
+        name="others-reason"
+        placeholder="Enter your explaination here..."
+      ></textarea>
+    </div>
+  <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+  <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
